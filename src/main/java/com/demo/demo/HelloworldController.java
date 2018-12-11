@@ -30,7 +30,7 @@ public class HelloworldController {
   @GetMapping("/")
   public String hello() {
     System.out.println("Prueba");
-    log.log(Level.INFO,"Prueba log");
+    log.log(Level.SEVERE,"Prueba log");
     log.info("Your information log message.");
     return "Hello world - springboot-appengine-standard!";
   }
