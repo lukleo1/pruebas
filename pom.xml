@@ -37,6 +37,13 @@
 			</exclusions>
 		</dependency>
 
+		<!-- Exclude any jul-to-slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jul-to-slf4j</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
 		<!-- Include Servlet API -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
