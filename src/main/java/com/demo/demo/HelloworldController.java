@@ -18,13 +18,17 @@ package com.demo.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.logging.Logger;
+
 
 @RestController
 public class HelloworldController {
+
+  private static final Logger log = Logger.getLogger(HelloworldController.class.getName());
   @GetMapping("/")
   public String hello() {
     System.out.println("Prueba");
-
+    log.info("Your information log message.");
     return "Hello world - springboot-appengine-standard!";
   }
 }
