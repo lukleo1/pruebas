@@ -18,6 +18,8 @@ package com.demo.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 
@@ -28,6 +30,7 @@ public class HelloworldController {
   @GetMapping("/")
   public String hello() {
     System.out.println("Prueba");
+    log.log(Level.INFO,"Prueba log");
     log.info("Your information log message.");
     return "Hello world - springboot-appengine-standard!";
   }
